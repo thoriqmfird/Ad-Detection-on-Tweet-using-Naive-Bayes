@@ -5,13 +5,13 @@ from training import Training
 from testing import Testing
 
 #Pre-Processing data
-data_latih = pd.read_excel('Data/DataLatih.xlsx') #4
+data_latih = pd.read_excel('DataLatih.xlsx') #4
 preproc_latih = Preproc(data_latih["Text"])
 hasil_normalisasi_latih = preproc_latih.data_normalized
 hasil_preproc_latih = preproc_latih.preprocessing()
 # print(hasil_preproc_latih)
 
-data_uji = pd.read_excel('Data/DataUji.xlsx') #1
+data_uji = pd.read_excel('DataUji.xlsx') #1
 preproc_uji = Preproc(data_uji["Text"])
 hasil_normalisasi_uji = preproc_uji.data_normalized
 hasil_preproc_uji = preproc_uji.preprocessing()
